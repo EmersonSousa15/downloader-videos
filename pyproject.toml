@@ -1,0 +1,23 @@
+[project]
+name = "download-youtube-videos"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "EmersonSousa15",email = "emersonsousac14@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "pafy (>=0.5.5,<0.6.0)",
+    "youtube-dl (>=2021.12.17,<2022.0.0)",
+    "yt-dlp[default] (>=2025.8.22,<2026.0.0)",
+    "streamlit (>=1.48.1,<2.0.0)"
+]
+
+[tool.poetry]
+packages = [{include = "download_youtube_videos", from = "src"}]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
