@@ -3,6 +3,8 @@ import streamlit as st
 import os
 
 os.makedirs("downloads", exist_ok=True)
+os.makedirs("downloads/audios", exist_ok=True)
+os.makedirs("downloads/videos", exist_ok=True)
 
 st.title("Downloader do YouTube")
 
